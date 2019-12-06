@@ -1,0 +1,43 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.post{
+    cursor: pointer;
+    display: block;
+    position: relative;
+    width: 15em;
+}
+
+.post-image{
+    margin: 0; /*Quitar el margen de figure*/
+}.post-image img {
+    width: 100%; /*Tomar el mismo tamaño de su contenedor*/
+    vertical-align: top; /**/
+}
+.post-overlay{
+    background: rgba(0,0,0,.4);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+
+    /*Separacion entre indicadores de likes y comentarios*/
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+.post:hover .post-overlay{
+    display: flex;
+}
+
+.post-likes, .post-comments {
+    font-weight: bold;
+}
