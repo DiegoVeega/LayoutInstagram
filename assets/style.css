@@ -14,6 +14,7 @@ body{
     cursor: pointer;
     display: block;
     position: relative;
+    justify-self: center;
 }
 
 .post-image{
@@ -48,6 +49,46 @@ body{
     font-weight: bold;
 }
 
+/*Navbar*/
+
+nav{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-evenly;
+    align-content: center;
+    margin: 3em;
+}
+
+div ul li {
+    display: inline-block;
+    list-style: none;
+
+}
+
+.box-search {
+    background: #fafafa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid #dbdbdb 1px;
+}
+
+.box-search input{
+    padding: 0.5em;
+    border: none;
+    background: #fafafa;
+}
+
+.box-search span{
+    padding: 0.5em;
+    border: none;
+}
+
+.list-fav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 /*Media Query*/
 
 @media only screen and (max-width: 768px) {
